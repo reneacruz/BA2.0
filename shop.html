@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <link rel="icon" href="paw-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shop</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__contenedor">
+
+            <a class="header__enlace" href="index.html">
+                <div class="logo logo--header">
+                <h1 class="header__titulo"><img class="header__titulo--icon" src="iconos/paw-logo.png">FELIX <span class="header__titulo header__titulo--reducido"><span class="color__titulo--reducido">Pet</span> Shop</span></h1>
+                </div>
+            </a>
+
+            <button id="abrir" class="button--abrir"><i id="boton" class="bi bi-list"></i></button>
+            <!-- <button id="cerrar" class="button--cerrar"><i class="bi bi-x"></i></button> -->
+            
+            <nav id="nav" class="navegacion-principal">
+                    
+                    <a class="navegacion-principal__enlace " href="index.html">Inicio</a>
+                    <a class="navegacion-principal__enlace navegacion-principal__enlace--activo" href="shop.html">Shop</a>
+                    <a class="navegacion-principal__enlace" href="adopciones.html">Adopciones</a>
+                    <a class="navegacion-principal__enlace" href="nosotros.html">Nosotros</a>  
+                    <a class="navegacion-principal__enlace " href="contacto.html">Contacto</a>  
+            </nav>
+
+        </div> <!--header__contenedor-->
+    </header>
+    <main class="shop">
+
+
+        <div class="encabezado">
+            <div class="encabezado1">
+    
+                
+                    <div class="enca">
+                        <p class="shop-p">En nuestro <span>SHOP</span> vas a encontrar todos los productos necesarios, de alta calidad y al mejor precio, para tus mascotas en todas las etapas y momentos de su vida.</p>
+                    </div>
+                
+            </div>
+    
+            <div class="explora">
+                <h2 class="shop-titulo">¡Explorá nuestra selección y consiente a tu peludo amigo como se merece!</h2>
+            </div>
+        </div>
+        
+        
+        <section class="contenedor">
+            <!-- Contenedor de elementos -->
+            <div id="contenedor-productos" class="contenedor-items">
+               
+                        </div>
+            <!-- Carrito de Compras -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Tu Carrito</h2>
+                </div>
+    
+                <div class="carrito-items">
+                    
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000,00
+                        </span>
+                    </div>
+                    <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                </div>
+            </div>
+            
+            
+        </section>
+    
+        <div class="condiciones">
+            <div class="condiciones">
+                <div class="item cond">
+                    <i class="fa-solid fa-truck fa-2xl"></i>
+                    <p>Envíos a todo AMBA</p>
+                </div>
+                <div class="item cond">
+                    <i class="fa-solid fa-percent fa-2xl"></i>
+                    <p>Promociones bancarias</p>
+                </div>
+                <div class="item cond">
+                    <i class="fa-regular fa-credit-card fa-2xl"></i>
+                    <p>Pagá por Transferencia bancaria o Mercado Pago</p>
+                </div>
+                <div class="item cond">
+                    <i class="fa-solid fa-shop fa-2xl"></i>
+                    <p>Retirá tu compra en nuestra sucursal</p>
+                </div>
+        </div>
+    </main>
+
+        <footer class="footer">
+            <p>Todos los derechos reservados &copy;</p>
+            <div class="hero__redes">
+                <a class="hero__enlace--facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="hero__icono hero__icono--facebook" src="iconos/facebook-icon.png">
+                </a>
+                <a class="hero__enlace--instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="hero__icono hero__icono--instagram" src="iconos/instagram-icon.png"> 
+                </a>
+                <a class="hero__enlace--twitter" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="hero__icono hero__icono--twitter" src="iconos/twitter-icon.png">
+                </a>
+            </div>
+            <p>Proyecto Final </p>
+        </footer>
+    
+    <script src="shop.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

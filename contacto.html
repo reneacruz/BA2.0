@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+    <link rel="icon" href="paw-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="body body-contacto">
+    <header class="header">
+        <div class="header__contenedor">
+
+            <a class="header__enlace" href="index.html">
+                <div class="logo logo--header">
+                <h1 class="header__titulo"><img class="header__titulo--icon" src="iconos/paw-logo.png">FELIX <span class="header__titulo header__titulo--reducido"><span class="color__titulo--reducido">Pet</span> Shop</span></h1>
+                </div>
+            </a>
+
+            <button id="abrir" class="button--abrir"><i id="boton" class="bi bi-list"></i></button>
+            <!-- <button id="cerrar" class="button--cerrar"><i class="bi bi-x"></i></button> -->
+            
+            <nav id="nav" class="navegacion-principal">
+                    
+                    <a class="navegacion-principal__enlace" href="index.html">Inicio</a>
+                    <a class="navegacion-principal__enlace" href="shop.html">Shop</a>
+                    <a class="navegacion-principal__enlace" href="adopciones.html">Adopciones</a>
+                    <a class="navegacion-principal__enlace" href="nosotros.html">Nosotros</a>  
+                    <a class="navegacion-principal__enlace navegacion-principal__enlace--activo" href="contacto.html">Contacto</a>  
+            </nav>
+
+        </div> <!--header__contenedor-->
+    </header>
+
+    <main class="main-contacto">
+        <div class="flex-contacto"> 
+            <address class="contenedor-datos">
+                    <p class="contenedor-datos__titulo">Veni a visitarnos...</p>
+                        <div class="datos-contacto">
+                                <div class="datos-contacto__direccion">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <circle cx="12" cy="11" r="3" />
+                                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                                    </svg>
+                                    <p class="datos-contacto__texto">Av. de Mayo 982 Caba</p>
+                                </div><!--div direccion-->
+                                <div class="datos-contacto__mail">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                            <line x1="10" y1="14" x2="21" y2="3" />
+                                            <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+                                        </svg>
+                                        <p class="datos-contacto__texto">felixpetshop@gmail.com</p>
+                                </div> <!--div mail-->
+                                <div class="datos-contacto__telefono">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                                    </svg>
+                                    <p class="datos-contacto__texto">77843784341</p>
+                                </div><!--div telefono-->
+                        </div><!--div datos de contacto-->
+                        <div class="mapa-contacto">
+                                <iframe class="mapa-contacto__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5522.600370229546!2d-58.382993243775445!3d-34.61028483527336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1679186567660!5m2!1ses!2sar" width="400" height="300" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+            </address>
+
+            <form class="formulario" name="contactoForm" action="" method="POST" id="form">
+            <legend class="formulario__legend">¡Escribinos!</legend>
+            
+            <div class="formulario__fieldset">
+                <div class="formulario__item">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <input type="text" id="nombre"class="formulario__input" placeholder="Tu nombre..." >
+                </div>
+                <div class="formulario__item">
+                    <label for="email" class="formulario__label">E-Mail</label>
+                    <input type="email" id="email" class="formulario__input" placeholder="Tu e-mail..." >
+                </div>
+                <div class="formulario__item">
+                    <label for="telefono"class="formulario__label">Telefono (Opcional)</label>
+                    <input type="tel" id="telefono" class="formulario__input" placeholder="Tu telefono...">
+                 </div>
+                 <div class="formulario__item"></div>
+                    <label for="mensaje" class="formulario__label">Mensaje</label>
+                    <textarea rows="4" cols="10" id="mensaje"class="formulario__input" placeholder="Escribinos tu mensaje..." 
+                    ></textarea>
+                    <button type="submit" class="formulario__boton">Enviar</button>
+                    <p class="warning" id="warning"></p>
+                </div>
+                 </form>
+             </div><!--flex-contacto-->
+             
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados &copy;</p>
+        <div class="hero__redes">
+            <a class="hero__enlace--facebook" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img class="hero__icono hero__icono--facebook" src="iconos/facebook-icon.png">
+            </a>
+            <a class="hero__enlace--instagram" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img class="hero__icono hero__icono--instagram" src="iconos/instagram-icon.png"> 
+            </a>
+            <a class="hero__enlace--twitter" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <img class="hero__icono hero__icono--twitter" src="iconos/twitter-icon.png">
+            </a>
+        </div>
+        <p>Proyecto Final </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
